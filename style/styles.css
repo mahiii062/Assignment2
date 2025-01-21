@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* first part */
 .navbar {
     display: flex;
     align-items: center;
@@ -91,12 +92,6 @@ body {
 
 
 /* second option */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .banner {
     display: flex;
     flex-wrap: wrap;
@@ -174,13 +169,6 @@ body {
 }
 
 /* third option */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 .container {
     max-width: 1200px;
     margin: 50px auto;
@@ -302,5 +290,120 @@ body {
 
     .arrows {
         display: none;
+    }
+}
+
+/* last part */
+footer {
+    background-color: #00AEEF;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* First Column: Logo and About */
+.footer-logo {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Second Column: Navigation Links */
+
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.siz {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.siz2 {
+    text-align: left;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FFD700;
+}
+
+/* Third Column: Social Media */
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-social h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-links,
+    .footer-social {
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
