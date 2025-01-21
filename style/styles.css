@@ -172,3 +172,135 @@ body {
         margin-bottom: 20px;
     }
 }
+
+/* third option */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    max-width: 300px;
+    background: linear-gradient(120deg, #f0f8ff, #d6e9f3);
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(120deg, #fff7e3, #fde8cb);
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(120deg, #f4e4ff, #d8cff2);
+}
+
+.card img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card a:hover {
+    color: #0056b3;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    background: #f6b512;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.bin-blu {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.bin-oran {
+    color: orange;
+    text-decoration: none;
+}
+
+.bin-vio {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+    background: #ffaa00;
+}
+
+.arrow span {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .arrows {
+        display: none;
+    }
+}
