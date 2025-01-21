@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.yel {
+    color: orange;
+}
+
+.sky {
+    color: rgb(45, 136, 172);
+}
+
+.skyblue {
+    color: #00AEEF;
+}
+
+.blue {
+    color: rgb(24, 24, 228);
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00AEEF;
+}
+
+.contact-btn {
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #e59400;
+}
+
+/* Mobile Responsiveness */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .nav-links,
+    .contact-btn {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
